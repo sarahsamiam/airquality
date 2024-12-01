@@ -6,8 +6,6 @@ load_dotenv()
 
 app = Flask(__name__)
 
-#Testing commit
-
 # Open AQ API Key (keep this secure)
 API_KEY = os.environ['OPENAQ_API_KEY']  # Replace with your actual API key
 
