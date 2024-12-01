@@ -20,7 +20,7 @@ def get_air_quality():
     if not locationid:
         return jsonify({"error": "Location ID is required"}), 400
 
-    url = f"https://api.openaq.org/v3/locations?city={locationid}"
+    url = f"https://api.openaq.org/v3/locations/{locationid}"
     headers = {"X-API-Key": API_KEY}
 
     # Make the request to Open AQ API
